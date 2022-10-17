@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 #include <conio.h>
 #include <windows.h>
 
@@ -80,23 +80,23 @@ void tambahdata(){
         printf("\t\t============== Tambah Data KTP ==============");
         fp=fopen("data_ktp","a");
         printf("\n\t\t id \t: ");
-        scanf("%d", &info.id);
+        scanf("%d,", &info.id);
         printf("\n\t\tMasukan NIK \t\t\t: ");
         scanf("%s", &info.nik);
         printf("\n\t\tMasukan Nama \t\t\t: ");
-        scanf("%s", &info.nama);
+        scanf(" %[^\n]", &info.nama);
         printf("\n\t\tMasukan Tempat/Tgl/Lahir \t: ");
-        scanf("%s", &info.ttl);
+        scanf(" %[^\n]", &info.ttl);
         printf("\n\t\tMasukan Jenis Kelamin \t\t: ");
-        scanf("%s", &info.jenis_kelamin);
+        scanf(" %[^\n]", &info.jenis_kelamin);
         printf("\n\t\tMasukan Alamat \t\t\t: ");
-        scanf("%s", &info.alamat);
+        scanf(" %[^\n]", &info.alamat);
         printf("\n\t\tMasukan Agama \t\t\t: ");
         scanf("%s", &info.agama);
         printf("\n\t\tMasukan Status Kawin \t\t: ");
-        scanf("%s", &info.status_kawin);
+        scanf(" %[^\n]", &info.status_kawin);
         printf("\n\t\tMasukan Pekerjaan \t\t: ");
-        scanf("%s", &info.pekerjaaan);
+        scanf(" %[^\n]", &info.pekerjaaan);
         printf("\n\t\tMasukan Kewarganegaraan \t: ");
         scanf("%s", &info.kewarganegaraan);
         printf("\t\t __________________________ \n");
